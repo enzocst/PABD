@@ -18,5 +18,8 @@ session_start();
         <input type = "submit" value = "Cadastrar"></input>
         <input type = "reset" value = "Limpar" ></input>
     </form>
+    <?php
+        include('listar.php');
+    ?>
 </body>
 </html>

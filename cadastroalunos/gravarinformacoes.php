@@ -8,4 +8,5 @@ include_once("conexao1.php");
 
     $resultado = "INSERT INTO alunos (nome, email) VALUES ('$nome', '$email')";
     $resultado_banco = mysqli_query($conn, $resultado);
+    header("Location:index.php");
 ?>
