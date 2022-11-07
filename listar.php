@@ -7,7 +7,7 @@
     <?php
         $mysql = new mysqli("localhost",
         "root","","cadastro");
-        if($resultado_sel = $mysqli )
+        if($resultado_sel = $mysqli-> query("SELECT id, nome, email FROM alunos"))
     ?>
 </body>
 </html>
