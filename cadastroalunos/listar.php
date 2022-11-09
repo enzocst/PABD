@@ -21,6 +21,9 @@
                 echo'<td>'.$row['id'].'</td>';
                 echo'<td>'.$row['nome'].'</td>';
                 echo'<td>'.$row['email'].'</td>';
+                echo "<td> <a href='deletar.php?tipo=2&id=".$row['id']."'>
+                <img src='img/deleteimg.png' width='20px' height='20' title='Excluir'/>
+                </td>";
                 echo'</tr>';
             }
             echo'</table>';
