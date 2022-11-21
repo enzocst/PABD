@@ -23,6 +23,7 @@
                 echo'<td>'.$row['email'].'</td>';
                 echo "<td> <a href='deletar.php?tipo=2&id=".$row['id']."'>
                 <img src='img/deleteimg.png' width='20' height='20' title='Excluir'/>
+                <img src='img/lapis.png' width='20' height='20' title='Atualizar'/>
                 </td>";
                 echo'</tr>';
             }
