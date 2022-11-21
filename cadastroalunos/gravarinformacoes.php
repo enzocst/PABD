@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("conexao1.php");
+include_once("conexao.php");
 ?>
 <?php
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);

@@ -4,5 +4,6 @@ $usuario = "root";
 $senha="";
 $dbname = "cadastro";
 
-$conexao = mysqli_connect($servidor, $usuario, $dbname);
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+
 ?>
