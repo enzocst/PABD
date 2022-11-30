@@ -4,11 +4,11 @@ session_start();
 
 <html>
     <head> 
-        <title> Cadastro de alunos </title>
+        <title> MARVEL </title>
     </head>
     <body>
     <h1> Tela de cadastro </h1>
-    <form method="POST" action="gravarinfo.php">
+    <form method="POST" action="gravarinfomarvel.php">
     <label> Nome: </label>
     <input type ="text" name="nome" placeholder ="Digite o nome do filme."/> <br/>
     <label> Ano: </label>
@@ -16,7 +16,7 @@ session_start();
     <label> Gênero: </label>
     <input type ="text" name="genero" placeholder ="Digite o gênero."/> <br/>
     <label> Classificação indicativa: </label>
-    <input type ="number" name="classificacaoind" placeholder ="Digite a classificação indicativa."/> <br/>
+    <input type ="number" name="classificacao" placeholder ="Digite a classificação indicativa."/> <br/>
     <label> Duração (em minutos): </label>
     <input type ="number" name="duracao" placeholder ="Digite a duração."/> <br/>
     <label> Diretor: </label>
@@ -25,7 +25,7 @@ session_start();
     <input type="reset" value ="Limpar" />  
 </form> 
 <?php
-include('listar.php');
+include('listarmarvel.php');
 ?>
 </body>
 

@@ -1,0 +1,19 @@
+<?php
+session_start();
+include_once("conexaomarvel.php");
+$id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+$ano = filter_input(INPUT_POST, 'ano', FILTER_SANITIZE_NUMBER_INT);
+$genero = filter_input(INPUT_POST, 'genero', FILTER_SANITIZE_STRING);
+$classificacao = filter_input(INPUT_POST, 'classificacao', FILTER_SANITIZE_NUMBER_INT);
+$duracao = filter_input(INPUT_POST, 'duracao', FILTER_SANITIZE_NUMBER_INT);
+$diretor = filter_input(INPUT_POST, 'diretor', FILTER_SANITIZE_STRING);
+
+$result_usuario = "UPDATE alunos SET nome='$nome', ano='$ano', genero='$genero', 
+                   classificacao='$classificacao', duracao='$duracao', diretor='$diretor' 
+                   WHERE id = '$id' ";
+$resultado_usuario = mysqli_query($conn, $resultado_usuario);
+
+header("Location:editarmarvel.php?id=$id");
+
+?>
