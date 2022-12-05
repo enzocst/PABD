@@ -8,7 +8,7 @@ session_start();
     </head>
     <body>
     <h1> Tela de cadastro </h1>
-    <form method="POST" action="gravarinfomarvel.php">
+    <form method="POST" action="gravainfomarvel.php">
     <label> Nome: </label>
     <input type ="text" name="nome" placeholder ="Digite o nome do filme."/> <br/>
     <label> Ano: </label>
