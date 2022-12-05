@@ -8,7 +8,7 @@
         $mysqli = new mysqli("localhost",
         "root","","cadastro");
         //a variável está recebendo o select do bd
-        if($resultado_sel = $mysqli->query("SELECT id,nome, email FROM alunos WHERE nome like '".$busca."%'")){
+        if($resultado_sel = $mysqli->query("SELECT id, nome, email FROM alunos WHERE nome like '".$busca."%'")){
             echo'<table border="1">';
             echo '<tr>';
             echo'<td>Id</td>';

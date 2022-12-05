@@ -16,7 +16,7 @@ session_start();
     <label> Gênero: </label>
     <input type ="text" name="genero" placeholder ="Digite o gênero."/> <br/>
     <label> Classificação indicativa: </label>
-    <input type ="number" name="classificacao" placeholder ="Digite a classificação indicativa."/> <br/>
+    <input type ="number" name="classificacao_indicativa" placeholder ="Digite a classificação indicativa."/> <br/>
     <label> Duração (em minutos): </label>
     <input type ="number" name="duracao" placeholder ="Digite a duração."/> <br/>
     <label> Diretor: </label>

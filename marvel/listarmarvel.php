@@ -6,8 +6,7 @@
     $busca ="";
         $mysqli = new mysqli("localhost",
         "root","","marvel");
-        //a variável está recebendo o select do bd
-        if($resultado_sel = $mysqli->query("SELECT id, nome, ano, genero, classifição, 
+        if($resultado_sel = $mysqli->query("SELECT id, nome, ano, genero, classificacao_indicativa, 
         duracao, diretor FROM informacoes WHERE nome like '".$busca."%'")){
             echo'<table border="1">';
             echo '<tr>';
@@ -26,7 +25,7 @@
                 echo'<td>'.$row['nome'].'</td>';
                 echo'<td>'.$row['ano'].'</td>';
                 echo'<td>'.$row['genero'].'</td>';
-                echo'<td>'.$row['classificacao'].'</td>';
+                echo'<td>'.$row['classificacao_indicativa'].'</td>';
                 echo'<td>'.$row['duracao'].'</td>';
                 echo'<td>'.$row['diretor'].'</td>';
                 echo "<td> <a href='deletar.php?tipo=2&id=".$row['id']."'>
