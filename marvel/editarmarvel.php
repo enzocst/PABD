@@ -23,7 +23,7 @@ $row_usuario       = mysqli_fetch_assoc($resultado_usuario);
     <label> Gênero: </label>
     <input type ="text" name="genero" value="<?php echo $row_usuario['genero'];?>"/><br>
     <label> Classificação indicativa: </label>
-    <input type ="number" name="classificacao" value="<?php echo $row_usuario['classificacao'];?>"/><br>
+    <input type ="number" name="classificacao_indicativa" value="<?php echo $row_usuario['classificacao_indicativa'];?>"/><br>
     <label> Duração (em minutos): </label>
     <input type ="number" name="duracao" value="<?php echo $row_usuario['duracao'];?>"/><br>
     <label> Diretor: </label>

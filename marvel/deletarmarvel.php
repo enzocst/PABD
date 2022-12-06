@@ -6,4 +6,5 @@
         $excluir = "DELETE FROM informacoes WHERE id='$id'";
         $resultado = mysqli_query($conn, $excluir);
     }
+    header("Location:indexmarvel.php");
 ?>

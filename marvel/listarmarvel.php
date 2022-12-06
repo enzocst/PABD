@@ -1,7 +1,7 @@
 <html>
-    <head> <title> Listar Filmes</title></head>
+    <head> <title> Listar Filmes </title></head>
     <body>
-    <h1>Listar Filmes </h1>
+    <h1> Listar Filmes </h1>
     <?php 
     $busca ="";
         $mysqli = new mysqli("localhost",
@@ -28,14 +28,15 @@
                 echo'<td>'.$row['classificacao_indicativa'].'</td>';
                 echo'<td>'.$row['duracao'].'</td>';
                 echo'<td>'.$row['diretor'].'</td>';
-                echo "<td> <a href='deletar.php?tipo=2&id=".$row['id']."'>
-                <img src='img/deleteimg.png' width='20' height='20' title='Excluir'/>
-                <img src='img/lapis.png' width='20' height='20' title='Atualizar'/>
+                echo "<td> <a href='deletarmarvel.php?tipo=2&id=".$row['id']."'>
+                <img src='imagens/excl.png' width='20' height='20' title='Excluir'/>
+                </td>";
+                echo "<td> <a href='editarmarvel.php?tipo=2&id=".$row['id']."'>
+                <img src='imagens/editar.png' width='20' height='20' title='Editar'/>
                 </td>";
                 echo'</tr>';
             }
             echo'</table>';
-            //$resultado_sel->close();
         }
     ?>
 </body>
