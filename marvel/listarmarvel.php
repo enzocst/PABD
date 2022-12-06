@@ -1,7 +1,7 @@
 <html>
     <head> <title> Listar Filmes </title></head>
     <body>
-    <h1> Listar Filmes </h1>
+    <h1> Filmes cadastrados </h1>
     <?php 
     $busca ="";
         $mysqli = new mysqli("localhost",
