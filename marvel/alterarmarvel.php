@@ -9,8 +9,8 @@ $classificacao_indicativa = filter_input(INPUT_POST, 'classificacao_indicativa',
 $duracao =                  filter_input(INPUT_POST, 'duracao', FILTER_SANITIZE_NUMBER_INT);
 $diretor =                  filter_input(INPUT_POST, 'diretor', FILTER_SANITIZE_STRING);
 
-$result_usuario = "UPDATE informacoes SET nome='$nome', ano='$ano', genero='$genero', classificacao_indicativa='$classificacao_indicativa', duracao='$duracao', diretor='$diretor' WHERE id = '$id' ";
-$resultado_usuario = mysqli_query($conn, $resultado_usuario);
+$resultado_usuario = "UPDATE informacoes SET nome='$nome', ano='$ano', genero='$genero', classificacao_indicativa='$classificacao_indicativa', duracao='$duracao', diretor='$diretor' WHERE id = '$id' ";
+$result_usuario = mysqli_query($conn, $resultado_usuario);
 
 header("Location:editarmarvel.php?id=$id");
 

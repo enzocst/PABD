@@ -17,6 +17,8 @@
             echo'<td>Classificação indicativa</td>';
             echo'<td>Duração</td>';
             echo'<td>Diretor</td>';
+            echo'<td>Excluir</td>';
+            echo'<td>Editar</td>';
             echo'</tr>';
 
             while($row = mysqli_fetch_assoc($resultado_sel)){
