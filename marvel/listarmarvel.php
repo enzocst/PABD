@@ -9,7 +9,7 @@
         if($resultado_sel = $mysqli->query("SELECT id, nome, ano, genero, classificacao_indicativa, 
         duracao, diretor FROM informacoes WHERE nome like '".$busca."%'")){
             echo'<table border="1">';
-            echo '<tr>';
+            echo'<tr>';
             echo'<td>Id</td>';
             echo'<td>Nome</td>';
             echo'<td>Ano</td>';
